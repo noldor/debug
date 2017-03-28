@@ -1,0 +1,29 @@
+{
+    "name": "noldors/debug",
+    "description": "Helpful function to debug in php",
+    "keywords": ["debug"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5",
+        "noldors/contracts": "0.*",
+        "symfony/var-dumper": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "fabpot/php-cs-fixer": "~1.7",
+        "fzaninotto/faker": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Noldors\\Helpers\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Noldors\\Helpers\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
