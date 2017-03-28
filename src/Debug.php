@@ -44,9 +44,11 @@ class Debug
     }
 
     /**
+     * Dump vars to console or browser.
+     *
      * @param mixed $value
      */
-    protected static function dumpVars($value)
+    public static function dumpVars($value)
     {
         if (class_exists(CliDumper::class)) {
             if (PHP_SAPI === 'cli') {
